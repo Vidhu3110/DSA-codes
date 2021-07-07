@@ -8,7 +8,7 @@ using namespace std;
             arr.push_back(nums[j]);
         }
         return arr;
-            
+
     }
 int main() {
     int n,x,key;
@@ -19,10 +19,10 @@ int main() {
         cin>>x;
         arr.push_back(x);
     }
-    
+
     shuffle(arr,key);
     cout<<"Array: ";
     for(int i=0; i<arr.size(); i++){
         cout<<arr[i]<<" ";
     }
-}  
+}

@@ -11,7 +11,7 @@ using namespace std;
     }
 int main(){
     int n;
-    int x; 
+    int x;
     cin>>n;
     vector<int> arr;
     for(int i=0; i<n; i++){
