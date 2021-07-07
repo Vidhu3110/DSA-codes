@@ -17,7 +17,6 @@ void intersection(vector<int> &nums1 , vector<int> &nums2){
       cout<<"intersection is "<<i;
   }
 
-vector
 }
 
 int main(){
@@ -36,4 +35,5 @@ int main(){
     intersection(arr,arr2);
 
     return 0;
+
 }

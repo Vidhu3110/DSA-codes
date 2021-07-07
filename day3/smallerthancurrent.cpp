@@ -23,7 +23,7 @@ int main(){
     arr= smallerNumbersThanCurrent(p);
 
     for(auto i : arr){
-        cout<<i;
+        cout<<i<<" ";
     }
     return 0;
 }
