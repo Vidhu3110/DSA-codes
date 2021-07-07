@@ -7,6 +7,9 @@ using namespace std;
             res +=m[x];
             m[x]++;
         }
+        for(auto x : m){
+            cout<<x.first<<"--->"<<x.second<<endl;
+        }
         return res;
     }
 int main(){
