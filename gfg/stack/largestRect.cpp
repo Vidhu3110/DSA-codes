@@ -39,7 +39,7 @@ int largestHist(vector <int> arr){
     int res = 0;
     int tp;
     int n = arr.size();
-    for(int i =0;i<arr.size();i++){
+    for(int i =0;i<n;i++){
         while(s.empty()==false && arr[s.top()]>=arr[i]){
             tp = s.top(); s.pop();
             int curr = arr[tp]*((s.empty()) ? i : (i-s.top()-1));
