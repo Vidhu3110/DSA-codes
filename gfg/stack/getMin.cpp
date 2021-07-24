@@ -20,7 +20,7 @@
 }
 
 in O(1) time and O(1) space tricky solution
-
+    working
 
 */
 
@@ -34,27 +34,38 @@ struct Stack{
         if(s.empty()){
             min1 = x;
         s.push(x);
-    }else if(x<=min){
-            s.push(2*x-min);
+    }else if(x<=min1){
+            s.push(2*x-min1);
             min1 = x;
         }else
             s.push(x);
     }
-    void pop(){
-        int t = s.top();s.pop()
+    int pop(){
+        int t = s.top();s.pop();
         if(t<=min1){
         int res=min1;
        min1=2*min1-t;
        return res;
-   }else{
-       return t;
         }
+        else
+       return t;
         }
     int top(){
         int t = s.top();
-        return (t<=min) ? min:t;
+        return (t<=min1) ? min1:t;
     }
     int getMin(){
         return min1;
     }
 };
+int main(){
+    Stack s;
+    s.push(10);
+    s.push(11);
+    s.push(12);
+    cout<<s.getMin()<<" ";
+    s.pop();
+    s.push(2);
+    cout<<s.getMin()<<" ";
+    return 0;
+}
