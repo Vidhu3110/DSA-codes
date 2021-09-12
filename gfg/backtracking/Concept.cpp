@@ -1,0 +1,26 @@
+/*
+
+
+bool isSafe(string str , int l ,int i , int r){
+    if(l!=0 &&str[l-1]=='A' && str[l]=='B')
+        return false
+    if(r==l+1 && str[i]=='A' && str[l] == 'B' )
+        return false;
+    return true;
+}
+void permute(string str , int l ,int r){
+    if(l==r){
+        cout<<str<<" ";
+        return;
+    }
+    else{
+        for(int i =0 ;i <=r;i++){
+            if(isSafe(str,l,i,r)){
+                swap(str[l],str[r]);
+                permute(str,l+1,r);
+                swap(str[i],str[l]);
+            }
+        }
+    }
+}
+*/
